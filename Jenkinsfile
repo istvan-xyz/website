@@ -42,6 +42,12 @@ node('docker') {
             sh 'npm run build'
         }
 
+        if (env.BRANCH_NAME == "master") {
+            stage('deploy') {
+                sh 'ls docs/.vitepress/dist'
+            }
+        }
+
         stage('clean') {
             cleanWs()
         }
