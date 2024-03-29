@@ -47,9 +47,7 @@ node('docker') {
         }
     }
 
-    if (env.BRANCH_NAME == "master") {
-        deployIstvanXyzWebsite()
-    }
+    deployIstvanXyzWebsite()
 
     stage('clean') {
         cleanWs()
