@@ -40,16 +40,18 @@ node('docker') {
 
         stage('build') {
             sh 'npm run build'
-        }
-
-        if (env.BRANCH_NAME == "master") {
-            stage('deploy') {
-                sh 'ls docs/.vitepress/dist'
+            
+            dir('docs/.vitepress/dist') {
+                stash 'dist'
             }
         }
+    }
 
-        stage('clean') {
-            cleanWs()
-        }
+    if (env.BRANCH_NAME == "master") {
+        deployIstvanXyzWebsite()
+    }
+
+    stage('clean') {
+        cleanWs()
     }
 }
