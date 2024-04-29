@@ -9,7 +9,8 @@
     "words": [
         "dbname",
         "PGHOST",
-        "postgres"
+        "postgres",
+        "István"
     ],
     "ignorePaths": [
         ".env",
