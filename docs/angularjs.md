@@ -1,4 +1,6 @@
-# AngularJS
+# AngularJS (2019)
+
+_This was written in 2019 and the opinions expressed are about Angular 1 a.k.a AngularJS._
 
 <p>AngularJS is one of the most hyped JavaScript-based frontend technologies built by Google.</p>
 <p>
