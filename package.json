@@ -7,11 +7,14 @@
         "start": "vitepress dev docs",
         "build": "vitepress build docs",
         "docs:serve": "vitepress serve docs",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "cspell ."
     },
     "author": "István Antal <istvan@antal.xyz>",
     "license": "UNLICENSED",
     "devDependencies": {
+        "cspell": "^8.8.0",
+        "cspell-dict-html": "^1.2.5",
         "vitepress": "^1.0.0-alpha.25",
         "vue": "^3.2.41"
     }

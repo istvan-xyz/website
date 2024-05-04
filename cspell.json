@@ -1,20 +1,32 @@
 {
-    "version": "0.2",
-    "language": "en,de,fr,it",
-    "dictionaries": [
-        "german",
-        "corp-terms",
-        "fonts"
-    ],
-    "words": [
-        "dbname",
-        "PGHOST",
-        "postgres",
-        "István"
-    ],
-    "ignorePaths": [
-        ".env",
-        ".vscode",
-        "package.json"
-    ]
+	"$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+	"version": "0.2",
+	"language": "en",
+	"dictionaries": ["corp-terms", "fonts", "typescript", "fullstack", "html"],
+	"import": ["./node_modules/cspell-dict-html/cspell-ext.json"],
+	"words": [
+		"Antal",
+		"biomejs",
+		"codebases",
+		"CSUA",
+		"dbname",
+		"Discarder",
+		"diskutil",
+		"István",
+		"magick",
+		"mydb",
+		"namespacing",
+		"overhyped",
+		"PGHOST",
+		"postgres",
+		"Rockstar",
+		"setdestination",
+		"someothertable",
+		"sparsebundle",
+		"stdinpass",
+		"tmutil",
+		"vitepress"
+	],
+	"useGitignore": true,
+	"ignorePaths": [".vscode", "./tsconfig.json"]
 }
