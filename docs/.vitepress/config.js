@@ -40,6 +40,10 @@ export default {
                         text: 'The Impact of Indentation Style on Life Success: A Comparative Study',
                         link: '/the-impact-of-indentation-style-on-life-success-a-comparative-study',
                     },
+                    {
+                        text: 'The Surprising Connection: How the Rise of Java Contributed to Global Warming',
+                        link: '/the-surprising-connection-how-the-rise-of-java-contributed-to-global-warming',
+                    },
                 ],
             },
         ],
