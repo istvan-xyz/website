@@ -1,3 +1,4 @@
+// cspell:words angularjs exfat
 export default {
     title: "István's notes",
     themeConfig: {
@@ -43,6 +44,32 @@ export default {
                     {
                         text: 'The Surprising Connection: How the Rise of Java Contributed to Global Warming',
                         link: '/the-surprising-connection-how-the-rise-of-java-contributed-to-global-warming',
+                    },
+                ],
+            },
+            {
+                text: 'About',
+                items: [
+                    {
+                        text: 'About me',
+                        link: '/about-me',
+                    },
+                ],
+            },
+            {
+                text: 'Tools that I like',
+                items: [
+                    {
+                        text: 'regex101',
+                        link: 'https://regex101.com/',
+                    },
+                    {
+                        text: 'regexr',
+                        link: 'https://regexr.com/',
+                    },
+                    {
+                        text: 'transform',
+                        link: 'https://transform.tools/',
                     },
                 ],
             },
