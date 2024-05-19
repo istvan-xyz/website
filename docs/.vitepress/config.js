@@ -10,6 +10,10 @@ export default {
                         text: 'Setting up linting and testing for a full-stack project',
                         link: '/setting-up-linting-and-testing-for-a-full-stack-project',
                     },
+                    {
+                        text: 'Jenkins',
+                        link: '/jenkins',
+                    },
                     { text: 'Adding SSH tunneling to a script', link: '/adding-ssh-tunneling-to-a-script' },
                     { text: 'Creating an encrypted Time Machine disk on ExFAT', link: '/time-machine-exfat' },
                     { text: 'Creating images for the Apple Watch', link: '/creating-images-for-the-apple-watch' },
@@ -48,13 +52,12 @@ export default {
                 ],
             },
             {
-                text: 'About',
-                items: [
-                    {
-                        text: 'About me',
-                        link: '/about-me',
-                    },
-                ],
+                text: 'About me',
+                link: '/about-me',
+            },
+            {
+                text: 'Useful snippets',
+                link: '/snippets',
             },
             {
                 text: 'Tools that I like',
