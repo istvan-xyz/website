@@ -74,6 +74,10 @@ export default {
                         text: 'transform',
                         link: 'https://transform.tools/',
                     },
+                    {
+                        text: 'crontab guru',
+                        link: 'https://crontab.guru/',
+                    },
                 ],
             },
         ],

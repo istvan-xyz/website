@@ -2,8 +2,16 @@
 	"$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
 	"version": "0.2",
 	"language": "en",
-	"dictionaries": ["corp-terms", "fonts", "typescript", "fullstack", "html"],
-	"import": ["./node_modules/cspell-dict-html/cspell-ext.json"],
+	"dictionaries": [
+		"corp-terms",
+		"fonts",
+		"typescript",
+		"fullstack",
+		"html"
+	],
+	"import": [
+		"./node_modules/cspell-dict-html/cspell-ext.json"
+	],
 	"words": [
 		"Antal",
 		"biomejs",
@@ -19,6 +27,7 @@
 		"overhyped",
 		"PGHOST",
 		"postgres",
+		"regexr",
 		"Rockstar",
 		"setdestination",
 		"someothertable",
@@ -28,5 +37,8 @@
 		"vitepress"
 	],
 	"useGitignore": true,
-	"ignorePaths": [".vscode", "./tsconfig.json"]
+	"ignorePaths": [
+		".vscode",
+		"./tsconfig.json"
+	]
 }
