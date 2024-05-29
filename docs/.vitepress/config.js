@@ -78,6 +78,10 @@ export default {
                         text: 'crontab guru',
                         link: 'https://crontab.guru/',
                     },
+                    {
+                        text: 'favicon generator',
+                        link: 'https://realfavicongenerator.net/',
+                    },
                 ],
             },
         ],

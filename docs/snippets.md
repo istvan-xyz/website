@@ -2,10 +2,12 @@
 
 Find element that is causing the showing of horizontal scrollbar in Google Chrome
 
-```css
-* {
-  outline: 1px solid #f00 !important;
-}
+```js
+(() => {
+    const style = document.createElement('style');
+    style.innerHTML = '* { outline: 1px solid #f00 !important; }';
+    document.body.appendChild(style);
+})();
 ```
 
 Getting certificate via DNS verification.
