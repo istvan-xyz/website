@@ -19,24 +19,11 @@ And now we should create a cspell configuration called `cspell.json`.
     "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
     "version": "0.2",
     "language": "en",
-    "dictionaries": [
-        "corp-terms",
-        "fonts",
-        "typescript",
-        "fullstack",
-        "html"
-    ],
-    "import": [
-        "./node_modules/@cspell/dict-html/cspell-ext.json"
-    ],
-    "words": [
-        "biomejs",
-    ],
+    "dictionaries": ["corp-terms", "fonts", "typescript", "fullstack", "html"],
+    "import": ["./node_modules/@cspell/dict-html/cspell-ext.json"],
+    "words": ["biomejs"],
     "useGitignore": true,
-    "ignorePaths": [
-        ".vscode",
-        "./tsconfig.json"
-    ]
+    "ignorePaths": [".vscode", "./tsconfig.json"]
 }
 ```
 
@@ -46,7 +33,7 @@ Now we can add a script in the `package.json`:
 {
     "scripts": {
         "lint": "cspell ."
-    },
+    }
 }
 ```
 
@@ -59,7 +46,7 @@ npm run lint
 If we get an error for something that is correct in our context, we can either add that to the `words` list in the `cspell.json` or we can run the following command to find a dictionary that has the word:
 
 ```sh
-npx cspell trace colspan 
+npx cspell trace colspan
 ```
 
 To make sure that mistakes are caught immediately in the IDE, whenever our colleague borrows are machine we can also add the `cspell` VScode extension to the list of recommended extensions:
@@ -68,9 +55,7 @@ To make sure that mistakes are caught immediately in the IDE, whenever our colle
 
 ```json
 {
-    "recommendations": [
-        "streetsidesoftware.code-spell-checker"
-    ]
+    "recommendations": ["streetsidesoftware.code-spell-checker"]
 }
 ```
 
@@ -100,7 +85,6 @@ const config = tsEslint.config(
 );
 
 export default config;
-
 ```
 
 Add the eslint command:
@@ -109,7 +93,7 @@ Add the eslint command:
 {
     "scripts": {
         "lint": "cspell . && eslint"
-    },
+    }
 }
 ```
 
@@ -118,8 +102,10 @@ Add the eslint command:
 ## Prettier
 
 ```sh
-npm install --D prettier
+npm install -D prettier
 ```
+
+Create a `.prettierrc`
 
 ```json
 {
@@ -129,6 +115,28 @@ npm install --D prettier
     "printWidth": 120,
     "singleQuote": true,
     "arrowParens": "avoid"
+}
+```
+
+Add to the lint script:
+
+`package.json`
+
+```json
+{
+    "scripts": {
+        "lint": "cspell . && eslint && prettier --check ."
+    }
+}
+```
+
+Add to VSCode recommendations:
+
+`.vscode/extensions.json`:
+
+```json
+{
+    "recommendations": ["streetsidesoftware.code-spell-checker", "esbenp.prettier-vscode"]
 }
 ```
 
@@ -144,11 +152,11 @@ vitest.config.ts
 
 ```ts
 /// <reference types="vitest" />
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-  test: {
-    // ...
-  },
-})
+    test: {
+        // ...
+    },
+});
 ```
