@@ -4,6 +4,16 @@ export default {
     themeConfig: {
         sidebar: [
             {
+                text: 'Thoughts',
+                items: [
+                    { text: 'Reinventing the wheel', link: '/reinventing-the-wheel' },
+                    { text: 'Java weirdness', link: '/java-weirdness' },
+                    { text: 'AngularJS', link: '/angularjs' },
+                    { text: 'Boring tech', link: '/boring-tech' },
+                    { text: 'The callback hell that never was', link: '/callback-hell-that-never-was' },
+                ],
+            },
+            {
                 text: 'Guides',
                 items: [
                     {
@@ -20,17 +30,12 @@ export default {
                 ],
             },
             {
-                text: 'Thoughts',
-                items: [
-                    { text: 'Java weirdness', link: '/java-weirdness' },
-                    { text: 'AngularJS', link: '/angularjs' },
-                    { text: 'Boring tech', link: '/boring-tech' },
-                    { text: 'The callback hell that never was', link: '/callback-hell-that-never-was' },
-                ],
-            },
-            {
                 text: 'Recommendations',
                 items: [
+                    {
+                        text: 'We are destroying software',
+                        link: 'https://antirez.com/news/145',
+                    },
                     { text: 'Making Architecture Matter - Martin Fowler Keynote', link: '/making-architecture-matter' },
                     {
                         text: 'Jonathan Blow on Software Quality at the CSUA GM2',
